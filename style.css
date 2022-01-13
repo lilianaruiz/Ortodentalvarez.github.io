@@ -165,12 +165,11 @@ nav.lista {
 .adicionales {
     display: flex;
     /* background-color: #0e6db1c9; */
-    background-image: radial-gradient( circle farthest-corner at 10% 20%, #013a63 0.1%, #0e6db1e0 99.8% );
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, #013a63 0.1%, #0e6db1e0 99.8%);
     /* background-image: linear-gradient( 65.9deg,  #2a6f97 5.5%, #0e6db1c9 54.2%, rgba(64,198,238,1) 55.2%, #0e6db1c9 98.4% ); */
     /* background: linear-gradient(to right, #013a63, #0e6db1e0); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
 }
-.adicionales div{
+.adicionales div {
     width: 50%;
 }
 .adic1 {
@@ -188,36 +187,88 @@ nav.lista {
     margin-left: 220px;
     margin-top: 120px;
     border-radius: 5px;
-   
 }
-.textocat{
+.textocat {
     color: whitesmoke;
-    display:flex;
+    display: flex;
     flex-direction: column;
-    align-items:flex-start;
-    justify-content:center;
+    align-items: flex-start;
+    justify-content: center;
     gap: 90px;
     padding: 10px;
-    
 }
-.textocat button{
+.textocat button {
     padding: 12px;
     width: 300px;
     margin-right: 20px;
     border-radius: 10px;
     border-color: #52a89a;
     border-width: 3px;
-    background-color: #52a89a;    
+    background-color: #52a89a;
     color: whitesmoke;
     font-size: 18px;
 }
-.textocat h1{
+.textocat h1 {
     font-size: 50px;
 }
-.textocat img{
-    width:18px;
+.textocat img {
+    width: 18px;
     position: relative;
     top: 4px;
     left: 20px;
+}
+.footerparte1 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
 
+.footerparte1 img {
+    height: 50px;
+    width: 50px;
+}
+.footerparte1 div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.footerparte2 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+.footerparte2 li {
+    margin-bottom: 10px;
+}
+.footerparte2 li a {
+    text-decoration: none;
+    color: black;
+}
+.footerparte2 ul li {
+    list-style: none;
+}
+
+.footersuscribete {
+    display: flex;
+    flex-direction: column;
+}
+.footerparte2 input {
+    padding: 8px;
+    border-radius: 10px;
+    border-color: #468faf;
+    border-width: 3px;
+}
+.footerparte2 h5 {
+    margin-top: 5px;
+}
+.footerparte3{
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    gap: 25px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
