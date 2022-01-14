@@ -2,10 +2,6 @@
     margin: 0;
     padding: 0;
 }
-:root {
-    --pagina: #013a63;
-    --secundario: #2a6f97;
-}
 
 .header {
     background-image: linear-gradient(to left, #013a63 10%, #2a6f97 40%, #a9d6e5 74%, white 80%);
@@ -14,10 +10,15 @@
     color: #a9d6e5;
     font-family: "Lucida Sans", "Lucida Sans Regular", Verdana, sans-serif;
 }
+
 .logo {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.logo a {
+    display: none;
 }
 
 nav.lista {
@@ -45,6 +46,7 @@ nav.lista {
     height: 104px;
     width: 40%;
 }
+
 .imagenjumbo {
     background-image: url("/imagenes/jumbo.jpg");
     width: 100vw;
@@ -60,7 +62,7 @@ nav.lista {
     border-radius: 20px;
     font-size: 20px;
     background-color: #89c2d9;
-    color: var(--pagina);
+    color: #013a63;
     margin-bottom: 70px;
     margin-top: 170px;
 }
@@ -164,10 +166,7 @@ nav.lista {
 }
 .adicionales {
     display: flex;
-    /* background-color: #0e6db1c9; */
     background-image: radial-gradient(circle farthest-corner at 10% 20%, #013a63 0.1%, #0e6db1e0 99.8%);
-    /* background-image: linear-gradient( 65.9deg,  #2a6f97 5.5%, #0e6db1c9 54.2%, rgba(64,198,238,1) 55.2%, #0e6db1c9 98.4% ); */
-    /* background: linear-gradient(to right, #013a63, #0e6db1e0); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .adicionales div {
     width: 50%;
@@ -264,11 +263,107 @@ nav.lista {
 .footerparte2 h5 {
     margin-top: 5px;
 }
-.footerparte3{
+.footerparte3 {
     display: flex;
     justify-content: center;
     height: 40px;
     gap: 25px;
     margin-top: 30px;
     margin-bottom: 30px;
+}
+
+@media (max-width: 1024px) {
+    body {
+        max-width: 1024px;
+    }
+    .contenidojumbo h5 {
+        margin-top: 70px;
+
+    }
+    .contenidojumbo {
+        width: 80vw;
+        margin-left: 10%;
+    }
+    .adicionales{
+        flex-direction: column;
+
+    }
+    .adicionales div{
+        width:100%;
+        height: 600px;
+    }
+    .textocat{
+        align-items:center;
+        padding: 0px;
+        text-align: center;
+    }
+    .textocat h3{
+        font-size: 22px;
+        width: 90%;
+        
+    }
+
+}
+
+@media (max-width: 500px) {
+    body {
+        max-width: 500px;
+    }
+    .header {
+        background-image: none;
+    }
+    .header nav {
+        display: none;
+    }
+    .logo {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .logo img {
+        width: 80%;
+    }
+    .logo a {
+        display: initial;
+    }
+    .logo a img {
+        height: 50px;
+        width: 50px;
+    }
+    .contenidojumbo{
+        width: 90vw;
+        margin-left: 1%;
+    }
+    .contenidojumbo h1{
+        font-size: 50px;
+    }
+    .contenidojumbo h5{
+        font-size: 15px;
+    }
+    .contenidojumbo p{
+        color: #01497c;
+    }
+    .adic2{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .adic1{
+        top:-600px;
+    }
+    .textocat h1{
+        margin-top: 40px;
+    }
+
+    .textocat{
+        gap: 60px;
+    }
+    .footerparte1{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .footerparte2{
+        flex-direction: column;
+        text-align: center;
+        gap:5px;
+    }
+
 }
