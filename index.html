@@ -16,15 +16,26 @@
             <img src="imagenes/logo.png" alt="">
             <nav class="lista">
                 <ul>
-                    <li><b>Nosotros</b></li>
-                    <li><b>Sucursales</b></li>
-                    <li><b>Blog</b></li>
-                    <li><b>Contacto</b></li>
+                    <li><b><a href="#seccatalogo">Nosotros</a></b></li>
+                    <li><b><a href="#adicionales">Sucursales</a></b></li>
+                    <li><b><a href="#">Blog</a></b></li>
+                    <li><b><a href="#contacto">Contacto</a></b></li>
                 </ul>
             </nav>
-            <a href=""><img src="imagenes/menu-movil.png" alt=""></a>
-        </div>
+            <input id="menu-movil" class="menu-movil" type="checkbox">
+            <label for="menu-movil" class="label-menu-movil">
+                <img src="imagenes/menu-movil.png" alt="">
+            </label>
+            <nav class="menu-desplegable">
+                <ul class="contenido">
+                    <li><b><a href="#seccatalogo">Nosotros</a></b></li>
+                    <li><b><a href="#adicionales">Sucursales</a></b></li>
+                    <li><b><a href="#">Blog</a></b></li>
+                    <li><b><a href="#contacto">Contacto</a></b></li>
+                </ul>
+            </nav>
 
+        </div>
     </header>
     <jumbotron>
         <div class="imagenjumbo">
@@ -47,7 +58,7 @@
     </jumbotron>
 
 
-    <section class="seccatalogo">
+    <section id="seccatalogo" class="seccatalogo">
 
         <h1 class="titulocatalogo"> Servicios</h1>
         <h1 class="subtcatalogo">Nuestras Especialidades</h1>
@@ -79,7 +90,7 @@
         </div>
 
     </section>
-    <section class="adicionales">
+    <section id="adicionales" class="adicionales">
 
         <div>
             <img class="adic2" src="imagenes/adic2.jpg" alt="">
@@ -94,7 +105,7 @@
             <button>Agenda tu cita<img src="imagenes/icono.png"></button>
         </div>
     </section>
-    <footer class="footergeneral">
+    <footer id="contacto" class="footergeneral">
         <section class="footerparte1">
             <div>
                 <img src="imagenes/foot1.png" alt="">
